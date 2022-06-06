@@ -95,7 +95,9 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 
 ---
 
-$$w=2 \times 2 \times 24 \times C=96 \times C$$
+$$w=2 \times 2 \times 24 \times C=96C$$
+
+NOTE: C is the channel count
 
 #### Solve for the padding (P), in terms of I, F, and S, if we want the input and output size to remain the same.
 
