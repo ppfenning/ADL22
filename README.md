@@ -95,7 +95,7 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 
 ---
 
-$$w=2*2*24=96$$
+$$w=2 \times 2 \times 24=96$$
 
 #### Solve for the padding (P), in terms of I, F, and S, if we want the input and output size to remain the same.
 
