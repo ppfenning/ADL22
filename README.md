@@ -62,9 +62,13 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 
 ---
 
-#### If I apply pooling of 2 (2,2 window with a stride of 2) to a (6,6) array, what is the resulting size?
+- When applying convolution to a network, each response takes the maximum value found within the filter.
+
+#### If I apply pooling of 2 ((2,2) window with a stride of 2) to a (6,6) array, what is the resulting size?
 
 ---
+
+- (3, 3, 9)
 
 
 ## 4. ConvNet Architectures, layers
