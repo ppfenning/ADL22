@@ -99,6 +99,6 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 
 ---
 
-$$P = (OS +F - I - 1) \over 2$$ 
+$$P = [(OS +F - I - 1) \over 2]$$ 
 
 ## 5. Practical patterns
