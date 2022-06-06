@@ -95,7 +95,7 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 
 ---
 
-$$w=2 \times 2 \times 24 \times C=96C$$
+$$w=2 \times 2 \times 24 \times C \times C=96C^{2}$$
 
 NOTE: C is the channel count
 
@@ -106,3 +106,22 @@ NOTE: C is the channel count
 $$P_{same} = \frac{(I-1)S + F - 1}{2}$$ 
 
 ## 5. Practical patterns
+
+#### What can we use the ImageDataGenerator for? What can it help us fight? (Give a brief, 1-sentence description)
+
+---
+
+- Allows us to randomize input data via rotation, shift and zoom transformations, helping us to fight overfitting to 
+  a single orientation of the image data.
+
+#### What is a better idea: To use one larger kernel (8,8) or multiple stacked smaller ones, 4x(2,2)? Why? Show the number of weights for each option.
+
+---
+
+- Smaller stacks allow for:
+  - More powerful features
+  - Require less parameters
+  - Can introduce non-linearity
+
+- (8,8) --> $(8 \times 8 \times C) \times C = 64C^{2}$
+- 4x(2,2) --> $(2 \times 2 \times C) \times C \times 4 = 16C^{2}$
