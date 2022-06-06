@@ -122,6 +122,9 @@ $$P_{same} = \frac{(I-1)S + F - 1}{2}$$
   - More powerful features
   - Require less parameters
   - Can introduce non-linearity
+  - Uses more memory
+
+Because of the above, smaller kernels are often better, but we are limited by memory.
 
 - (8,8) --> $(8 \times 8 \times C) \times C = 64C^{2}$
 - 4x(2,2) --> $(2 \times 2 \times C) \times C \times 4 = 16C^{2}$
