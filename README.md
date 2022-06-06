@@ -80,7 +80,7 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 
 - I: Size of original network, input volume (i.e. image of (1920, 1080))
 - O: Network size of each response layer after convolution.
-- F: Kernel size of filter used in convolution.
+- F: Kernel size of filter, (n,n), used in convolution.
 - S: Number of steps taken, stride, before applying a new filter.
 - P: Vectors added as columns or rows on the input network, altering its width and height to better use the 
   given filter. (most commonly zeo vectors, but does not need to be.)
@@ -94,6 +94,8 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 #### How many weights do I have if I have 24 such filters stacked (conv2_24)?
 
 ---
+
+$$w=2*2*24=96$$
 
 #### Solve for the padding (P), in terms of I, F, and S, if we want the input and output size to remain the same.
 
