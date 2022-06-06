@@ -99,6 +99,6 @@ part B, with _less_ variance, therefore I would leave out these extra hidden lay
 
 ---
 
-$$P = \frac{(OS +F - I - 1)}{2}$$ 
+$$P_{same} = \frac{(I-1)S + F - 1)}{2}$$ 
 
 ## 5. Practical patterns
